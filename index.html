@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="icon/png" href="icons8-water-64.png">
+	<title>Pollution Awareness</title>
+</head>
+
+<body>
+<section class="first">
+
+								<!--LANDING PAGE-->
+
+<!--Resources-->
+	<div class="bannerVideo" id="slideShow">
+		<video src="C:\Users\simmi\Desktop\water pollution\10177347-uhd_4096_2160_30fps.mp4" autoplay muted loop class="active" type="video/mp4"></video>
+		<video src="C:\Users\simmi\Desktop\water pollution\5579748-hd_1920_1080_30fps.mp4" autoplay muted loop></video>
+		<video src="C:\Users\simmi\Desktop\water pollution\1918465-uhd_3840_2160_24fps.mp4" autoplay muted loop></video>
+		
+	</div>
+
+<!-- Navbar -->
+	<div class="container">
+		<header id="navbar">
+			<a href="#" class="logo"> Water Pollution</a>
+			<ul>
+				<li><a href="#" class="active">Home</a></li>
+			
+				<li><a href="#aboutus">About Us</a></li>
+				<li><a href="#aboutus">Contact Us</a></li>
+                <li><a href="https://calculator.dev/environment/water-pollution-calculator/">Calculator</a></li>
+                <li><a href="shop.html">Shop</a></li>
+				<li><a href="login.html">Log In / Sign Up</a></li>
+			</ul>
+			<span class="menuIcon" onclick="toggleMenu();"></span>
+		</header>
+
+<!--Video Intro-->
+		<div class="content">
+			<div class="bannerText" id="slideShowText">
+				
+				<div>
+					<h2>Water Pollution</h2>
+					<p>Water pollution (or aquatic pollution) is the contamination of water bodies, usually as a result of human activities, in such a manner that negatively affects its legitimate uses. Water pollution reduces the ability of the body of water to provide the ecosystem services that it would otherwise provide.</p>
+					<a href="#water" class="readmore">Read More</a>
+				</div>
+				
+				
+			</div>
+		</div>
+
+
+<!--Arrows-->
+		<ul class="controls">
+			<li onclick="prevSlide();prevSlideText();"><img src="left.png"></li>
+			<li onclick="nextSlide();nextSlideText();"><img src="right.png"></li>
+		</ul>
+	</div>
+</section>
+
+<!--Arrow Controls-->
+<script type="text/javascript">
+	const slideShow = document.getElementById('slideShow');
+	const slides = slideShow.getElementsByTagName('video');
+	var index = 0;
+	function nextSlide(){
+		slides[index].classList.remove('active');
+		index = (index + 1) % slides.length;
+		slides[index].classList.add('active');
+	}
+	function prevSlide(){
+		slides[index].classList.remove('active');
+		index = (index - 1 + slides.length) % slides.length;
+		slides[index].classList.add('active');
+	}
+
+
+    const slideShowText = document.getElementById('slideShowText');
+	const slidesText = slideShowText.getElementsByTagName('div');
+	var i = 0;
+	function nextSlideText(){
+		slidesText[i].classList.remove('active');
+		i = (i + 1) % slidesText.length;
+		slidesText[i].classList.add('active');
+	}
+	function prevSlideText(){
+		slidesText[i].classList.remove('active');
+		i = (i - 1 + slidesText.length) % slidesText.length;
+		slidesText[i].classList.add('active');
+	}
+	function toggleMenu(){
+		const menuIcon = document.querySelector('.menuIcon');
+		const navbar = document.getElementById('navbar');
+		menuIcon.classList.toggle('active');
+		navbar.classList.toggle('active');
+	}
+</script>
+
+							
+
+				
+
+								<!--WATER PAGE-->
+<section class="third">
+		<div class="water">
+				<a name = "water" class="water"><h1>Water Pollution</h1></a>
+				<p class="descw">Water pollution occurs when harmful substances—often chemicals or microorganisms—contaminate a stream, river, lake, ocean, aquifer, or other body of water, degrading water quality and rendering it toxic to humans or the environment.</p>
+				<div class="totalwater">
+					<div class="proswater">
+						<h3>Causes</h3>
+						<p>Water is uniquely vulnerable to pollution. Known as a “universal solvent,” water is able to dissolve more substances than any other liquid on earth. Water pollution can usually be attributed to one of four sources: sewage, industry, agriculture, and urban runoff including stormwater. For example, releasing inadequately treated wastewater into natural waters can lead to degradation of these aquatic ecosystems. Water pollution can also lead to water-borne diseases for people using polluted water for drinking, bathing, washing or irrigation.</p>
+					</div>
+								
+					<div class="proswater">
+						<h3>Preventions</h3>
+						<p>Reduce your plastic consumption and reuse or recycle plastic when you can.
+							Properly dispose of chemical cleaners, oils, and nonbiodegradable items to keep them from going down the drain.
+							Maintain your car so it does not leak oil, antifreeze, or coolant. Be mindful of anything you pour into storm sewers, since that waste often won’t be treated before being released into local waterways. If you notice a storm sewer blocked by litter, clean it up to keep that trash out of the water.
+							Don't put fertilizer on the grass right before it rains. The chemicals will wash into storm drains and waterways.
+						</p>
+					</div>
+								
+					<div class="proswater">
+						<h3>Facts</h3>
+						<p>Approximately 785 million people in the world do not have access to clean drinking water because of pollution. Around 70% of the industrial waste is dumped into the water bodies where they pollute the usable water supply. Industry dumps an estimated 300-400 MT of polluted waste into water bodies every year. It includes millions of tonnes of heavy metals, solvents, toxic sludge and other wastes. Fourteen billion pounds of garbage, mostly plastic, is dumped into the ocean every year. 15 million children under the age of five die each year because of diseases caused by drinking water</p>
+					</div>		
+				</div>
+		</div>
+</section>
+
+										
+						
+
+<!--FOOTER-->
+<section class="footer">
+	<a name="aboutus" class="aboutus"></a>
+		<h4>About Us</h4>
+		<p>We are students of Lovely Professional University, <br> trying to spread awareness in the world about the rising pollution.</p>
+		<br>
+		<p>Contact Us ↓</p>
+		<p>simmi121412@gmail.com</p>
+		<p>@gmail.com</p>
+		<br>
+		<p>Made by Sneha choudhary,</p>
+	</section>
+
+</body>
+</html>
+            
+    
+   
