@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Pollution Products</title>
+    <style> 
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {
+    position: relative;
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #eee;
+    transition: transform 0.3s ease;
+}
+
+.product:hover img {
+    transform: scale(1.1);
+}
+
+.product-info {
+    padding: 20px;
+    text-align: left;
+}
+
+.product-info h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+.product-info p {
+    margin-bottom: 0;
+    color: #666;
+}
+
+.buyButton {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0 0 8px 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.product:hover .buyButton {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.buyButton:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Water Pollution Products</h1>
+        <div class="products">
+            <div class="product">
+                <img src="pro1.png" alt="Water Pollution Product 1">
+                <div class="product-info">
+                    <h2>Smart water leak Sensor</h2>
+                    <p>TP-Link Tapo T300 Smart Water Leak Sensor with Dripping Detection, Up to 90 dB Alarm with one-Touch, Instant App Notification, IP67 Waterproof, Tapo Hub Required Sold separetly</p>
+                </div>
+                <button class="buyButton">Buy on Amazon</button>
+            </div>
+            <div class="product">
+                <img src="pro2.png" alt="Water Pollution Product 2">
+                <div class="product-info">
+                    <h2>Water detector Alarm</h2>
+                    <p>MOTTERU Water Detector Alarm with Tuya APP, Water Leak Detector - Water Sensors for Leaks WiFi 2.4G, Smart Home Devices, Water Alarm Leak Detector, Water Sensor Alarm, Water Leak Detectors for Home</p>
+                </div>
+                <button class="buyButton">Buy on Amazon</button>
+            </div>
+            <div class="product">
+                <img src="pro3.png" alt="Water Pollution Product 3">
+                <div class="product-info">
+                    <h2>Water Leak Detector Sensor Alarm</h2>
+                    <p>Water Leak Detector Sensor Alarm: Home Water Flooding Monitor Smart Sink Overflow Monitoring Adjustable Wet Moisture Alert Pipe Leakage Drip Detection Warning for Basement Floor</p>
+                </div>
+                <button class="buyButton">Buy on Amazon</button>
+            </div>
+            <div class="product">
+                <img src="pro4.png" alt="Water Pollution Product 4">
+                <div class="product-info">
+                    <h2>Water leak detector</h2>
+                    <p>STORE77® Water Leak Sensor Detector Flood Alarm Work Alone Battery Operated Overflow Flood Water Level Alarm Detector Solar Full Water Leak Alarm rain Alarm Liquid Level Alarm</p>
+                </div>
+                <button class="buyButton">Buy on Amazon</button>
+            </div>
+            <div class="product">
+                <img src="pro5.png" alt="Water Pollution Product 5">
+                <div class="product-info">
+                    <h2>Rylan Leakage Repair Waterproof Tape</h2>
+                    <p>Rylan Leakage Repair Waterproof Tape for Pipe Leakage Roof Water Leakage Solution Aluminium Foil Tape Waterproof Adhesive Tape Sealing Butyl Rubber Tape for Leakage</p>
+                </div>
+                <button class="buyButton">Buy on Amazon</button>
+            </div>
+            <div class="product">
+                <img src="pro6.png" alt="Water Pollution Product 6">
+                <div class="product-info">
+                    <h2>WiFi Water Leakage Detector</h2>
+                    <p>amiciSmart WiFi Water Leakage Detector, SmartLife App Compatible Water Overflow Alarm, Smart Leak Sensor with 2xAAA Battery</p>
+                </div>
+                <button class="buyButton">Buy on Amazon</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+            
+
+    <script>
+        // Select all buy buttons
+const buyButtons = document.querySelectorAll('.buyButton');
+
+// Array of affiliate links
+const affiliateLinks = [
+    'https://www.amazon.in/Tapo-T300-Detection-Notification-Waterproof/dp/B0CB8Q3X4N/ref=sr_1_2?crid=2JCNB7194I6I0&dib=eyJ2IjoiMSJ9.ox3hXSCUd6m4-hRVnHkoXbVePKx3eqn6355YLz0YwWFMancoAKq21XUD7YXRvxUU4v2D7TpYP3J7SaCM8KQGdfvx8OFLe-bDZ1qGHg0xwd1tq4s3HRP-Un-gOFG_7LqWD_iviVineQFJHer4Y7etGNCTfSNnIOjRlr5bk656EEJakSD0Pq80ZdlMErR0J6l2DkZmYm7mgnjoB0BbeFmm4XvEcPf3IwRfEBm1uI6jlOwf-ARNT8n_XSEdfg1oaiFaoVq3IctZQYBR_a_kEePvBiTqH6McpxPFJ7r-IaOCMPA.0M6YRaWbgZOFrChsdXbZ3CyXEE7ufovNw9-QuGTqgg0&dib_tag=se&keywords=water+leak+detection+devices&qid=1714088062&sprefix=water+leak+detection+devices%2Caps%2C381&sr=8-2', // Example link 1
+    'https://www.amazon.in/MOTTERU-Water-Detector-Alarm-Tuya/dp/B0CJYL22VZ/ref=sr_1_15?crid=2JCNB7194I6I0&dib=eyJ2IjoiMSJ9.ox3hXSCUd6m4-hRVnHkoXbVePKx3eqn6355YLz0YwWFMancoAKq21XUD7YXRvxUU4v2D7TpYP3J7SaCM8KQGdfvx8OFLe-bDZ1qGHg0xwd1tq4s3HRP-Un-gOFG_7LqWD_iviVineQFJHer4Y7etGNCTfSNnIOjRlr5bk656EEJakSD0Pq80ZdlMErR0J6l2DkZmYm7mgnjoB0BbeFmm4XvEcPf3IwRfEBm1uI6jlOwf-ARNT8n_XSEdfg1oaiFaoVq3IctZQYBR_a_kEePvBiTqH6McpxPFJ7r-IaOCMPA.0M6YRaWbgZOFrChsdXbZ3CyXEE7ufovNw9-QuGTqgg0&dib_tag=se&keywords=water+leak+detection+devices&qid=1714088062&sprefix=water+leak+detection+devices%2Caps%2C381&sr=8-15', // Example link 2
+    'https://www.amazon.in/Water-Leak-Detector-Sensor-Alarm/dp/B0B639K2HL/ref=sr_1_26?crid=2JCNB7194I6I0&dib=eyJ2IjoiMSJ9.ox3hXSCUd6m4-hRVnHkoXbVePKx3eqn6355YLz0YwWFMancoAKq21XUD7YXRvxUU4v2D7TpYP3J7SaCM8KQGdfvx8OFLe-bDZ1qGHg0xwd1tq4s3HRP-Un-gOFG_7LqWD_iviVineQFJHer4Y7etGNCTfSNnIOjRlr5bk656EEJakSD0Pq80ZdlMErR0J6l2DkZmYm7mgnjoB0BbeFmm4XvEcPf3IwRfEBm1uI6jlOwf-ARNT8n_XSEdfg1oaiFaoVq3IctZQYBR_a_kEePvBiTqH6McpxPFJ7r-IaOCMPA.0M6YRaWbgZOFrChsdXbZ3CyXEE7ufovNw9-QuGTqgg0&dib_tag=se&keywords=water+leak+detection+devices&qid=1714088062&sprefix=water+leak+detection+devices%2Caps%2C381&sr=8-26', // Example link 3
+    'https://www.amazon.in/STORE77%C2%AE-Detector-Operated-Overflow-Included/dp/B0BVFYMNX8/ref=sr_1_13?crid=2JCNB7194I6I0&dib=eyJ2IjoiMSJ9.ox3hXSCUd6m4-hRVnHkoXbVePKx3eqn6355YLz0YwWFMancoAKq21XUD7YXRvxUU4v2D7TpYP3J7SaCM8KQGdfvx8OFLe-bDZ1qGHg0xwd1tq4s3HRP-Un-gOFG_7LqWD_iviVineQFJHer4Y7etGNCTfSNnIOjRlr5bk656EEJakSD0Pq80ZdlMErR0J6l2DkZmYm7mgnjoB0BbeFmm4XvEcPf3IwRfEBm1uI6jlOwf-ARNT8n_XSEdfg1oaiFaoVq3IctZQYBR_a_kEePvBiTqH6McpxPFJ7r-IaOCMPA.0M6YRaWbgZOFrChsdXbZ3CyXEE7ufovNw9-QuGTqgg0&dib_tag=se&keywords=water+leak+detection+devices&qid=1714088062&sprefix=water+leak+detection+devices%2Caps%2C381&sr=8-13', // Example link 4
+    'https://www.amazon.in/Rylan-Waterproof-Solution-Aluminium-Adhesive/dp/B097ZX583Y/ref=sr_1_16?crid=2JCNB7194I6I0&dib=eyJ2IjoiMSJ9.ox3hXSCUd6m4-hRVnHkoXbVePKx3eqn6355YLz0YwWFMancoAKq21XUD7YXRvxUU4v2D7TpYP3J7SaCM8KQGdfvx8OFLe-bDZ1qGHg0xwd1tq4s3HRP-Un-gOFG_7LqWD_iviVineQFJHer4Y7etGNCTfSNnIOjRlr5bk656EEJakSD0Pq80ZdlMErR0J6l2DkZmYm7mgnjoB0BbeFmm4XvEcPf3IwRfEBm1uI6jlOwf-ARNT8n_XSEdfg1oaiFaoVq3IctZQYBR_a_kEePvBiTqH6McpxPFJ7r-IaOCMPA.0M6YRaWbgZOFrChsdXbZ3CyXEE7ufovNw9-QuGTqgg0&dib_tag=se&keywords=water%2Bleak%2Bdetection%2Bdevices&qid=1714088062&sprefix=water%2Bleak%2Bdetection%2Bdevices%2Caps%2C381&sr=8-16&th=1', // Example link 5
+    'https://www.amazon.in/amiciSmart-Detector-SmartLife-Compatible-Overflow/dp/B0BLN6G47F/ref=sr_1_5?crid=2JCNB7194I6I0&dib=eyJ2IjoiMSJ9.ox3hXSCUd6m4-hRVnHkoXbVePKx3eqn6355YLz0YwWFMancoAKq21XUD7YXRvxUU4v2D7TpYP3J7SaCM8KQGdfvx8OFLe-bDZ1qGHg0xwd1tq4s3HRP-Un-gOFG_7LqWD_iviVineQFJHer4Y7etGNCTfSNnIOjRlr5bk656EEJakSD0Pq80ZdlMErR0J6l2DkZmYm7mgnjoB0BbeFmm4XvEcPf3IwRfEBm1uI6jlOwf-ARNT8n_XSEdfg1oaiFaoVq3IctZQYBR_a_kEePvBiTqH6McpxPFJ7r-IaOCMPA.0M6YRaWbgZOFrChsdXbZ3CyXEE7ufovNw9-QuGTqgg0&dib_tag=se&keywords=water+leak+detection+devices&qid=1714088062&sprefix=water+leak+detection+devices%2Caps%2C381&sr=8-5'  // Example link 6
+];
+
+// Add event listener to each button
+buyButtons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+        // Open the corresponding affiliate link based on the button index
+        window.open(affiliateLinks[index], '_blank');
+    });
+});
+
+    </script>
+</body>
+</html>
